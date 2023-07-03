@@ -12,9 +12,20 @@ export default {
 
 <template>
     <!-- HTML qui -->
-    <img src="../assets/03.webp" alt="hero">
+    <div id="hero">
+        <img src="../assets/img/jumbotron.jpg" alt="Hero">
+        <div class="title">CURRENT SERIES</div>
+    </div>
 </template>
 
-<style>
+
+<style scoped>
 /* style CSS qui*/
+#hero {
+    background-color: #f04997;
+}
+
+.title {
+    background-color: #0282f9;
+}
 </style>

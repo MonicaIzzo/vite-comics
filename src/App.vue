@@ -16,11 +16,13 @@ Bonus:
 */
 
 <script>
-import AppTitle from './components/AppTitle.vue';
+import AppHeader from './components/AppHeader.vue';
 import AppHero from './components/AppHero.vue';
+import AppMain from './components/AppMain.vue';
+import AppFooter from './components/AppFooter.vue';
 export default {
-  name: 'Applicazione app Vue',
-  components: { AppTitle, AppHero },
+  name: 'Applicazione VITE COMICS',
+  components: { AppHeader, AppHero, AppMain, AppFooter },
   data() {
     return {}
   }
@@ -30,8 +32,48 @@ export default {
 
 
 <template>
-  <AppTitle />
+  <AppHeader />
   <AppHero />
+  <AppMain />
+  <AppFooter />
 </template>
 
-<style></style>
+<style>
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Custom PROPERTIES */
+:root {
+  --primary-color: #183a4a;
+  --secondart-color: #3d88ae;
+  --fizz: #61d2a4;
+  --buzz: #f9d277;
+  --FrizzBuzz: #de5471;
+}
+
+/* Generics */
+body {
+  background-color: var(--primary-color)
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.main {
+  width: 1100px;
+  padding: 0;
+}
+
+/********************************************
+    UTILITIES
+********************************************/
+
+.debug {
+  border: 2px dotted red;
+</style>
