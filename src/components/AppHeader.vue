@@ -74,7 +74,7 @@ export default {
             <div>
                 <ul>
                     <li><a href="#">CHARACTERS</a></li>
-                    <li><a href="#">COMICS</a></li>
+                    <li><a href="#" class="active">COMICS</a></li>
                     <li><a href="#">MOVIES</a></li>
                     <li><a href="#">TV</a></li>
                     <li><a href="#">GAMES</a></li>
@@ -118,8 +118,13 @@ ul {
 
 li {
     list-style: none;
-    margin: 0 20px;
     position: relative;
+    font-weight: bold;
+}
+
+li a {
+    padding: 10px 20px;
+
 }
 
 li a:hover::after {
@@ -134,5 +139,11 @@ li a:hover::after {
     right: 0px;
     font-size: 4px;
 
+}
+
+li a.active {
+
+    background-color: rgba(2, 130, 250, 1);
+    color: white;
 }
 </style>
