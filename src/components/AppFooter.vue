@@ -131,7 +131,7 @@ export default {
 </template>
 
 
-<style scoped>
+<style lang="scss" scoped>
 /* style CSS qui*/
 #loghi {
     background-color: #0282f9;
