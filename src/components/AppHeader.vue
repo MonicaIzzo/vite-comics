@@ -73,16 +73,9 @@ export default {
             </div>
             <div>
                 <ul>
-                    <li><a href="#">CHARACTERS</a></li>
-                    <li><a href="#" class="active">COMICS</a></li>
-                    <li><a href="#">MOVIES</a></li>
-                    <li><a href="#">TV</a></li>
-                    <li><a href="#">GAMES</a></li>
-                    <li><a href="#">COLLECTILES</a></li>
-                    <li><a href="#">VIDEO</a></li>
-                    <li><a href="#">FANS</a></li>
-                    <li><a href="#">NEWS</a></li>
-                    <li><a href="#">SHOP</a></li>
+                    <li v-for="link in links" :key="link.text">
+                        <a :href="link.url" :class="{ active: link.current }">{{ link.text }}</a>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -120,6 +113,7 @@ li {
     list-style: none;
     position: relative;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 li a {
