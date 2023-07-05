@@ -13,8 +13,9 @@ export default {
 <template>
     <!-- HTML qui -->
     <div id="hero">
-        <img src="../assets/img/jumbotron.jpg" alt="Hero">
-        <div class="title">CURRENT SERIES</div>
+        <div class="title-hero container">
+            <h2>--&gt; Content goes here &lt;--</h2>
+        </div>
     </div>
 </template>
 
@@ -22,10 +23,23 @@ export default {
 <style scoped>
 /* style CSS qui*/
 #hero {
-    background-color: #f04997;
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.title {
-    background-color: #0282f9;
+/* #hero {
+    background-color: #f04997;
+    height: 400px;
+    background-image: url('../assets/img/jumbotron.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}*/
+
+.title-hero {
+    color: white;
 }
 </style>

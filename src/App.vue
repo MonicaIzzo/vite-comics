@@ -48,26 +48,21 @@ export default {
 
 /* Custom PROPERTIES */
 :root {
-  --primary-color: #183a4a;
-  --secondart-color: #3d88ae;
-  --fizz: #61d2a4;
-  --buzz: #f9d277;
-  --FrizzBuzz: #de5471;
+  --primary-color: #0282f9;
+  --secondart-color: #1c1c1c;
+  --fotter: #303030;
+  --bg-social: #797979;
 }
 
 /* Generics */
-body {
-  background-color: var(--primary-color)
-}
-
 img {
   display: block;
   max-width: 100%;
 }
 
-.main {
-  width: 1100px;
-  padding: 0;
+.container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 /********************************************
@@ -76,4 +71,23 @@ img {
 
 .debug {
   border: 2px dotted red;
+}
+
+/********************************************
+    LAYOUT
+********************************************/
+
+a {
+  color: black;
+  text-decoration: none;
+
+}
+
+a:hover {
+  color: var(--primary-color)
+}
+
+ul {
+  list-style: none;
+}
 </style>
