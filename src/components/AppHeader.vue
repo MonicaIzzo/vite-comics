@@ -107,37 +107,36 @@ ul {
     align-content: center;
     align-items: center;
     list-style-type: none;
-}
 
-li {
-    list-style: none;
-    position: relative;
-    font-weight: bold;
-    text-transform: uppercase;
-}
+    li {
+        list-style: none;
+        position: relative;
+        font-weight: bold;
+        text-transform: uppercase;
 
-li a {
-    padding: 10px 20px;
+        a {
+            padding: 10px 20px;
 
-}
+            &.active {
 
-li a:hover::after {
-    content: "-";
-    background-color: #0282f9;
-    display: block;
-    width: 100%;
-    height: 1;
-    position: absolute;
-    top: 74px;
-    left: 0px;
-    right: 0px;
-    font-size: 4px;
+                background-color: rgba(2, 130, 250, 1);
+                color: white;
+            }
 
-}
+            &:hover::after {
+                content: "-";
+                background-color: #0282f9;
+                display: block;
+                width: 100%;
+                height: 1;
+                position: absolute;
+                top: 74px;
+                left: 0px;
+                right: 0px;
+                font-size: 4px;
+            }
 
-li a.active {
-
-    background-color: rgba(2, 130, 250, 1);
-    color: white;
+        }
+    }
 }
 </style>

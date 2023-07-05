@@ -39,12 +39,7 @@ export default {
 </template>
 
 <style lang="scss">
-/* Reset CSS */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@use './assets/'
 
 /* Custom PROPERTIES */
 :root {
