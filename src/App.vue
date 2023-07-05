@@ -39,50 +39,5 @@ export default {
 </template>
 
 <style lang="scss">
-@use './assets/'
-
-/* Custom PROPERTIES */
-:root {
-  --primary-color: #0282f9;
-  --secondart-color: #1c1c1c;
-  --fotter: #303030;
-  --bg-social: #797979;
-}
-
-/* Generics */
-img {
-  display: block;
-  max-width: 100%;
-}
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-/********************************************
-    UTILITIES
-********************************************/
-
-.debug {
-  border: 2px dotted red;
-}
-
-/********************************************
-    LAYOUT
-********************************************/
-
-a {
-  color: black;
-  text-decoration: none;
-
-}
-
-a:hover {
-  color: var(--primary-color)
-}
-
-ul {
-  list-style: none;
-}
+@use '../src/assets/sccs/style.sccs';
 </style>

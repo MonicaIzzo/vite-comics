@@ -1,0 +1,22 @@
+@use '_vars.scss' as *;
+@use '_generic.scss' as *;
+@use '_reset.scss' as *;
+@use '_utilities.scss' as *;
+
+/********************************************
+    LAYOUT
+********************************************/
+
+a {
+  color: black;
+  text-decoration: none;
+
+}
+
+a:hover {
+  color: var(--primary-color)
+}
+
+ul {
+  list-style: none;
+}
