@@ -74,7 +74,8 @@ export default {
             <div>
                 <ul>
                     <li v-for="link in links" :key="link.text">
-                        <a :href="link.url" :class="{ active: link.current }">{{ link.text }}</a>
+                        <a :href="link.url" :class="{ active: link.current }">
+                            {{ link.text }}</a>
                     </li>
                 </ul>
             </div>

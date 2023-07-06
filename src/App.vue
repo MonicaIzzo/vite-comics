@@ -26,7 +26,6 @@ export default {
   data() {
     return {}
   }
-
 } 
 </script>
 
@@ -39,5 +38,5 @@ export default {
 </template>
 
 <style lang="scss">
-@use '../src/assets/sccs/style.sccs';
+@use 'assets/sccs/partials/style.sccs' as *;
 </style>

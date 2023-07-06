@@ -1,11 +1,14 @@
-@use '_vars.scss' as *;
-@use '_generic.scss' as *;
-@use '_reset.scss' as *;
-@use '_utilities.scss' as *;
+@use 'partials/_vars.scss' as *;
+@use 'partials/_generic.scss' as *;
+@use 'partials/_reset.scss' as *;
+@use 'partials/_utilities.scss' as *;
 
 /********************************************
     LAYOUT
 ********************************************/
+body{
+  font-family: $font;
+} 
 
 a {
   color: black;
@@ -14,7 +17,7 @@ a {
 }
 
 a:hover {
-  color: var(--primary-color)
+  color: $primary-color;
 }
 
 ul {
