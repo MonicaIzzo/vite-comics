@@ -87,6 +87,8 @@ export default {
 <style lang="scss" scoped>
 /* style CSS qui*/
 
+
+
 header {
     height: 100px;
     margin: 10px auto;
@@ -112,7 +114,11 @@ ul {
     li {
         list-style: none;
         position: relative;
-        font-weight: bold;
+        font-family: 'Open Sans Variable', sans-serif;
+        font-weight: 700;
+        font-variation-settings: "wdth" 75, "wght" 700;
+
+
         text-transform: uppercase;
 
         a {
