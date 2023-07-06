@@ -3,9 +3,6 @@ export default {
     // logica javascript qui
     data() {
         return {
-            /* text: data.text,
-            url: data.url,
-            current: data.current */
             card: [
                 {
                     thumb:
@@ -97,28 +94,35 @@ export default {
 } 
 </script>
 <template>
-    CARD DS
-    <!-- HTML qui -->
-    <!-- <div id="main">
+    <div id="card" class="container">
         <ul>
-            <li><img src="" alt="img 01"></li>
-            <li><img src="" alt="img 02"></li>
-            <li><img src="" alt="img 03"></li>
-            <li><img src="" alt="img 04"></li>
-            <li><img src="" alt="img 05"></li>
-            <li><img src="" alt="img 06"></li>
-            <li><img src="" alt="img 07"></li>
-            <li><img src="" alt="img 08"></li>
-            <li><img src="" alt="img 09"></li>
-            <li><img src="" alt="img 10"></li>
-            <li><img src="" alt="img 11"></li>
-            <li><img src="" alt="img 12"></li>
+            <li><img src="../assets/img/card.jpg" alt="img 01"></li>
+            <li><img src="../assets/img/card.jpg" alt="img 02"></li>
+            <li><img src="../assets/img/card.jpg" alt="img 03"></li>
+            <li><img src="../assets/img/card.jpg" alt="img 04"></li>
+            <li><img src="../assets/img/card.jpg" alt="img 05"></li>
+            <li><img src="../assets/img/card.jpg" alt="img 06"></li>
+            <li><img src="../assets/img/card.jpg" alt="img 07"></li>
+            <li><img src="../assets/img/card.jpg" alt="img 08"></li>
+            <li><img src="../assets/img/card.jpg" alt="img 09"></li>
+            <li><img src="../assets/img/card.jpg" alt="img 10"></li>
+            <li><img src="../assets/img/card.jpg" alt="img 11"></li>
+            <li><img src="../assets/img/card.jpg" alt="img 12"></li>
         </ul>
+        <a>LOAD MORE</a>
     </div>
-    <button type="button">LOAD MORE</button> -->
 </template>
 
 
 <style lang="scss" scoped>
 /* style CSS qui*/
+#card {
+    background-color: #1c1c1c;
+
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
 </style>
