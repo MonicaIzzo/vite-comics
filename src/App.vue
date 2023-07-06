@@ -38,5 +38,5 @@ export default {
 </template>
 
 <style lang="scss">
-@use 'assets/sccs/partials/style.sccs' as *;
+@use 'assets/scss/style.scss' as *;
 </style>

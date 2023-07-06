@@ -67,7 +67,7 @@ export default {
 <template>
     <!-- HTML qui -->
     <header>
-        <nav class="debug container">
+        <nav class="container">
             <div>
                 <img class="logo" src="../assets/img/dc-logo.png" alt="Logo DC">
             </div>
