@@ -112,7 +112,7 @@ export default {
     <!-- FOOTER -->
     <div class="footer">
         <div class="container">
-            <div class="footer-bottom">
+            <div class="footer-botton">
                 <div>
                     <a>SIGN-UO NOW!</a>
                 </div>
@@ -178,7 +178,7 @@ export default {
 
 .short-menu h3 {
     margin-bottom: 10px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .short-link {
@@ -215,7 +215,7 @@ export default {
     color: white;
 }
 
-.footer-bottom {
+.footer-botton {
     display: flex;
     align-content: center;
     align-items: center;

@@ -94,35 +94,134 @@ export default {
 } 
 </script>
 <template>
-    <div id="card" class="container">
-        <ul>
-            <li><img src="../assets/img/card.jpg" alt="img 01"></li>
-            <li><img src="../assets/img/card.jpg" alt="img 02"></li>
-            <li><img src="../assets/img/card.jpg" alt="img 03"></li>
-            <li><img src="../assets/img/card.jpg" alt="img 04"></li>
-            <li><img src="../assets/img/card.jpg" alt="img 05"></li>
-            <li><img src="../assets/img/card.jpg" alt="img 06"></li>
-            <li><img src="../assets/img/card.jpg" alt="img 07"></li>
-            <li><img src="../assets/img/card.jpg" alt="img 08"></li>
-            <li><img src="../assets/img/card.jpg" alt="img 09"></li>
-            <li><img src="../assets/img/card.jpg" alt="img 10"></li>
-            <li><img src="../assets/img/card.jpg" alt="img 11"></li>
-            <li><img src="../assets/img/card.jpg" alt="img 12"></li>
-        </ul>
-        <a>LOAD MORE</a>
+    <div class="main">
+        <div id="cards" class="container">
+            <ul>
+                <li class="card">
+                    <img src="../assets/img/card.jpg" alt="img 01">
+                    <div class="description">
+                        <div class="title">Action Comics</div>
+                        <div class="type">comic book</div>
+                        <div class="prince">$19.99</div>
+                    </div>
+
+                </li>
+                <li class="card">
+                    <img src="../assets/img/card.jpg" alt="img 01">
+                    <span class="title">titolo</span>
+                </li>
+                <li class="card">
+                    <img src="../assets/img/card.jpg" alt="img 01">
+                    <span class="title">titolo</span>
+                </li>
+                <li class="card">
+                    <img src="../assets/img/card.jpg" alt="img 01">
+                    <span class="title">titolo</span>
+                </li>
+                <li class="card">
+                    <img src="../assets/img/card.jpg" alt="img 01">
+                    <span class="title">titolo</span>
+                </li>
+                <li class="card">
+                    <img src="../assets/img/card.jpg" alt="img 01">
+                    <span class="title">titolo</span>
+                </li>
+                <li class="card">
+                    <img src="../assets/img/card.jpg" alt="img 01">
+                    <span class="title">titolo</span>
+                </li>
+                <li class="card">
+                    <img src="../assets/img/card.jpg" alt="img 01">
+                    <span class="title">titolo</span>
+                </li>
+                <li class="card">
+                    <img src="../assets/img/card.jpg" alt="img 01">
+                    <span class="title">titolo</span>
+                </li>
+                <li class="card">
+                    <img src="../assets/img/card.jpg" alt="img 01">
+                    <span class="title">titolo</span>
+                </li>
+                <li class="card">
+                    <img src="../assets/img/card.jpg" alt="img 01">
+                    <span class="title">titolo</span>
+                </li>
+                <li class="card">
+                    <img src="../assets/img/card.jpg" alt="img 01">
+                    <span class="title">titolo</span>
+                </li>
+            </ul>
+            <div class="footer">
+                <a class="load_more">LOAD MORE</a>
+            </div>
+        </div>
     </div>
 </template>
 
 
 <style lang="scss" scoped>
 /* style CSS qui*/
-#card {
-    background-color: #1c1c1c;
+.main {
+    background-color: black;
+    padding-top: 50px;
+}
 
+#cards {
+    background-color: black;
 }
 
 ul {
     display: flex;
     flex-wrap: wrap;
+}
+
+li {
+    flex-basis: calc(100% / 6);
+    padding: 10px;
+}
+
+.description {
+    color: white;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.title {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.type {
+    font-weight: 300;
+    margin-bottom: 6px;
+    text-transform: capitalize
+}
+
+.prince {
+    font-weight: 900;
+    margin-bottom: 6px;
+    color: #0282f9;
+    font-size: 1.3rem;
+}
+
+.load_more {
+    background-color: #0282f9;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.load_more:hover {
+    background-color: #303030;
+    color: white;
+    cursor: pointer;
+}
+
+.footer {
+    text-align: center;
+    height: 80px;
+    margin-top: 20px;
 }
 </style>
