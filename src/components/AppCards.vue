@@ -11,7 +11,7 @@ export default {
 
 
 <template>
-    <h1>CARD</h1>
+    <h1>CARDS</h1>
     <AppCard />
 </template>
 
