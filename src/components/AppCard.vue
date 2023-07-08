@@ -8,8 +8,9 @@ export default {
 <template>
     <ul>
         <li v-for="card in cards" :key="card.series" class="card">
-            <img :src="card.thumb" :alt="card.series">
-
+            <div class="thumb">
+                <img :src="card.thumb" :alt="card.series">
+            </div>
             <div class="description">
                 <div class="title">{{ card.title }}</div>
                 <div class="type">{{ card.type }}</div>
@@ -31,6 +32,16 @@ ul {
 li {
     flex-basis: calc(100% / 6);
     padding: 10px;
+}
+
+li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thumb {
+    height: 280px;
 }
 
 .description {
