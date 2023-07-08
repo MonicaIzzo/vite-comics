@@ -3,7 +3,7 @@ export default {
     // logica javascript qui
     data() {
         return {
-            title: 'Prima applicazione app Vite'
+            title: 'Hero'
         }
     }
 } 

@@ -1,16 +1,19 @@
 <script>
-// logica javascript qui
+export default {
+    props: { cards: Array }
+};
 </script>
 
 
 <template>
     <ul>
-        <li class="card">
-            <img src="../assets/img/card.jpg" alt="img 01">
+        <li v-for="card in cards" :key="card.series" class="card">
+            <img :src="card.thumb" :alt="card.series">
+
             <div class="description">
-                <div class="title">Action Comics</div>
-                <div class="type">comic book</div>
-                <div class="prince">$19.99</div>
+                <div class="title">{{ card.title }}</div>
+                <div class="type">{{ card.type }}</div>
+                <div class="prince">{{ card.price }}</div>
             </div>
 
         </li>
